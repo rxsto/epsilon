@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'me.rxsto'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+
+    implementation group: 'com.discord4j', name: 'discord4j-core', version: '3.0.9'
+
+    implementation group: 'org.reflections', name: 'reflections', version: '0.9.9'
+
+    implementation group: 'org.json', name: 'json', version: '20190722'
+
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.1'
+}
